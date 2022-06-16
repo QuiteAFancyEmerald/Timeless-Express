@@ -1,0 +1,17 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "The official portfolio site for QuiteAFancyEm!",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "author": "Quite A Fancy Emerald",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mime-types": "^2.1.27"
+    },
+    "engines": {
+        "node": ">=12.20.0"
+    }
+}

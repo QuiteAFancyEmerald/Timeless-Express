@@ -1,0 +1,15 @@
+{
+    "name": "Quite A Fancy Emerald | Timless",
+    "short_name": "Timless Portfolio",
+    "theme_color": "#e74d45",
+    "background_color": "#250c3a",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "https://hutao.dev",
+    "description": "Official portfolio site of QuiteAFancyEm! Developer who does many projects in their freetime and also has a coffee/anime lifestyle.",
+    "orientation": "any",
+    "icons": [{
+        "src": "https://hutao.dev/icon.png",
+        "sizes": "1024x1024"
+    }]
+}
