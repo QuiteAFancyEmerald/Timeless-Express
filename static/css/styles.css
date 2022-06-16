@@ -361,6 +361,16 @@ html::-webkit-scrollbar-thumb {
     text-transform: uppercase;
 }
 
+.head-w {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.spacing-w {
+    margin-left: 150px;
+    bottom: 70px;
+}
+
 .main-body {
     position: relative;
     font-family: 'Kdam Thmor Pro', sans-serif;
