@@ -402,6 +402,7 @@ html::-webkit-scrollbar-thumb {
     padding: 10px 20px;
     margin-right: 10px;
     background: #b41832;
+    letter-spacing: 3px;
 }
 
 .info-list>li span:before {
@@ -479,6 +480,11 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     padding: 80x;
+    letter-spacing: 2px;
+}
+
+.showcase-item>p {
+    letter-spacing: 2px;
 }
 
 .link {
