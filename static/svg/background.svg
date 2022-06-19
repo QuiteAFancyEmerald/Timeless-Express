@@ -51,9 +51,9 @@
         </mask>
         <style>
             @keyframes float1 {
-                0%{transform: translate(0, 0)}
-                50%{transform: translate(-50px, 0)}
-                100%{transform: translate(0, 0)}
+                0%{transform: translate3d(0, 0, 0)}
+                50%{transform: translate3d(-50px, 0, 0)}
+                100%{transform: translate3d(0, 0, 0)}
             }
 
             .triangle-float1 {
@@ -61,9 +61,9 @@
             }
 
             @keyframes float2 {
-                0%{transform: translate(0, 0)}
-                50%{transform: translate(-30px, -10px)}
-                100%{transform: translate(0, 0)}
+                0%{transform: translate3d(0, 0, 0)}
+                50%{transform: translate3d(-30px, -10px, 0)}
+                100%{transform: translate3d(0, 0, 0)}
             }
 
             .triangle-float2 {
@@ -71,13 +71,21 @@
             }
 
             @keyframes float3 {
-                0%{transform: translate(0, 0)}
-                50%{transform: translate(0, -30px)}
-                100%{transform: translate(0, 0)}
+                0%{transform: translate3d(0, 0, 0)}
+                50%{transform: translate3d(0, -30px, 0)}
+                100%{transform: translate3d(0, 0, 0)}
             }
 
             .triangle-float3 {
                 animation: float3 20s infinite;
+            }
+
+            .triangle-float1,
+            .triangle-float2,
+            .triangle-float3, {
+                backface-visibility: hidden;
+                perspective: 1000;
+                will-change: transform;
             }
         </style>
     </defs>
