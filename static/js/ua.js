@@ -1,5 +1,5 @@
 (function() {
-    if (navigator.userAgent.indexOf("/") > 0) {
-        document.getElementById("code").textContent = ('Your Browser: ' + navigator.userAgent);
+    if (navigator.userAgent.indexOf("Firefox/") > 0) {
+        document.getElementById("code").textContent = ('Background animations disabled on Firefox for now.');
     }
 })();
