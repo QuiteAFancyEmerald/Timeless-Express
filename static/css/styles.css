@@ -106,26 +106,14 @@ html::-webkit-scrollbar-thumb {
     display: none;
 }
 
+
+/* Huge Thank You to YÖCTDÖNALD'S for fixing the various Firefox issues! */
+
 .background {
     position: fixed;
-    background: url("/svg/background.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
     left: 0px;
     top: 0px;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.background-firefox {
-    position: fixed;
-    background: url("/svg/background-firefox.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    left: 0px;
-    top: 0px;
+    border: 0;
     z-index: -1;
     width: 100%;
     height: 100%;
@@ -496,11 +484,19 @@ html::-webkit-scrollbar-thumb {
 .desc {
     display: flex;
     justify-content: center;
-    padding: 80x;
+    padding: 80px;
     letter-spacing: 2px;
+    margin-bottom: 1em;
+    width: 100%;
 }
 
 .showcase-item>p {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    letter-spacing: 2px;
+}
+
+.showcase-link {
+    font-family: 'Kdam Thmor Pro', sans-serif;
     letter-spacing: 2px;
 }
 

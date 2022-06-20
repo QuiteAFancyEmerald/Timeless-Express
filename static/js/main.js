@@ -9,7 +9,7 @@
 
     //Background animation disabled on Firefox for now!
     if (navigator.userAgent.indexOf("Gecko/") > 0) {
-        i.removeAttribute("class", "background");
-        i.setAttribute("class", "background-firefox");
+        /* Huge Thank You to YÖCTDÖNALD'S for fixing the various Firefox issues! */
+        i.src = "/svg/background-firefox.svg";
     }
 })();

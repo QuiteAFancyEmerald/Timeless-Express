@@ -50,24 +50,26 @@
             <rect width="1920" height="1080" fill="#ffffff"/>
         </mask>
         <style xmlns="http://www.w3.org/2000/svg">
+            :root {
+                overflow:hidden;
+            }
+
             .triangle-float1, .triangle-float3 {
-                --t:calc(min(var(--20s),20000 - var(--20s)));
+                --t:calc(-1px*min(var(--20s),20000 - var(--20s))/200);
             }
 
             .triangle-float1 {
-                transform:translate(calc(-1px*var(--t)/200),0);
+                transform:translate(var(--t),0);
             }
 
             .triangle-float2 {
                 --t:calc(-1px*min(var(--15s),15000 - var(--15s))/250);
-                position:relative;
                 transform:translate(var(--t),calc(var(--t)/3));
             }
 
             .triangle-float3 {
-                transform:translate(0,calc(-3px*var(--t)/1000));
+                transform:translate(0,calc(3*var(--t)/5));
             }
         </style>
-        
     <script xmlns="http://www.w3.org/2000/svg" language="javascript">((d,e,c,i,a=0,b=0,t=()=&gt;{d.setProperty('--20s',a);d.setProperty('--15s',b);e=i.now()-c;c=i.now();a&lt;2e4?a+=e:a=0;b&lt;15e3?b+=e:b=0;setTimeout(t,150)},w=m=&gt;{m=document.documentElement.appendChild(Object.assign(new DOMParser().parseFromString('','text/html').createElement('iframe'),{style:'display:none'}));c=(i=m.contentWindow.performance).now();setTimeout(a=>{w();m.remove()},1e4)})=&gt;t(w()))(document.documentElement.style)</script></defs>
 </svg>

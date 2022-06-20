@@ -18,4 +18,6 @@ npm install
 npm start
 ```
 
+Thanks to @00Fjongl for fixing the various resource usage issues on Firefox! Was a slightly cursed issue with how Firefox handles hardware acceleration and simple CSS keyframe animations.
+
 <img src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Timeless/master/static/404.png?raw"></img>
