@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800;900&display=swap');
 @import url("https://unpkg.com/@fortawesome/fontawesome-free@6.1.1/css/all.min.css");
 :root {
   --dark-bg: #250c3a;
@@ -174,6 +175,7 @@ html::-webkit-scrollbar-thumb {
 .footer {
   overflow: hidden;
   padding-top: 10vw;
+  width: 100%;
   background: url("/svg/waves-footer.svg");
   background-repeat: no-repeat;
   background-size: 100vw auto;
@@ -349,6 +351,15 @@ html::-webkit-scrollbar-thumb {
   margin-left: 50px;
 }
 
+.container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  float: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .container-1,
 .container-2 {
   display: flex;
@@ -375,6 +386,10 @@ html::-webkit-scrollbar-thumb {
   text-transform: uppercase;
 }
 
+#showcase {
+  list-style-type: none;
+}
+
 .head-w {
   font-size: 35px;
   text-transform: uppercase;
@@ -395,12 +410,15 @@ html::-webkit-scrollbar-thumb {
 }
 
 .info-list {
-  padding: 250px;
+  float: left;
+  width: 50%;
   list-style: none;
+  padding-top: 15%;
+  perspective: 1px;
 }
 
 .info-list > p {
-  font-family: "Kdam Thmor Pro", sans-serif;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -443,6 +461,10 @@ html::-webkit-scrollbar-thumb {
   width: 1px;
 }
 
+#showcase>ul>li {
+  will-change: transform;
+}
+
 .geo-shape-1 {
   position: relative;
   width: 680px;
@@ -479,7 +501,6 @@ html::-webkit-scrollbar-thumb {
   width: 100%;
   height: 600px;
   overflow: hidden;
-  margin: 30px;
   object-fit: contain;
 }
 
@@ -496,11 +517,12 @@ html::-webkit-scrollbar-thumb {
   padding: 80px;
   letter-spacing: 2px;
   margin-bottom: 1em;
+  font-family: "Raleway", sans-serif;
   width: 100%;
 }
 
 .showcase-item > p {
-  font-family: "Kdam Thmor Pro", sans-serif;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 2px;
 }
 
