@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Kantumruy+Pro:wght@600&display=swap');
 @import url("https://unpkg.com/@fortawesome/fontawesome-free@6.1.1/css/all.min.css");
 :root {
   --dark-bg: #250c3a;
@@ -43,6 +43,13 @@ nav {
 
 img {
   display: block;
+}
+
+h1, 
+h2, 
+h3, 
+h4 {
+  font-weight: normal;
 }
 
 ::selection {
@@ -409,6 +416,10 @@ html::-webkit-scrollbar-thumb {
   bottom: 0vh;
 }
 
+.main-body>h3 {
+  font-size: 16px;
+}
+
 .info-list {
   float: left;
   width: 50%;
@@ -418,11 +429,12 @@ html::-webkit-scrollbar-thumb {
 }
 
 .info-list > p {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Kantumruy Pro', sans-serif;
   letter-spacing: 2px;
 }
 
 .info-list > li {
+  display: flex;
   padding-top: 10px;
   padding-bottom: 40px;
   position: relative;
@@ -441,10 +453,10 @@ html::-webkit-scrollbar-thumb {
   content: "";
   position: absolute;
   border-left: 1px solid;
-  left: 14px;
+  left: 10px;
   bottom: 0;
   z-index: -1;
-  height: 100%;
+  height: 50px;
 }
 
 .info-list > li:last-child span:before {
@@ -517,12 +529,12 @@ html::-webkit-scrollbar-thumb {
   padding: 80px;
   letter-spacing: 2px;
   margin-bottom: 1em;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Kantumruy Pro', sans-serif;
   width: 100%;
 }
 
 .showcase-item > p {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Kantumruy Pro', sans-serif;
   letter-spacing: 2px;
 }
 
@@ -570,6 +582,7 @@ html::-webkit-scrollbar-thumb {
 @media screen and (max-width: 1024px) {
   .navbar {
     width: 40%;
+    font-size: 12px;
   }
   .header {
     background-size: 100vw 130%;
@@ -586,9 +599,6 @@ html::-webkit-scrollbar-thumb {
     min-height: 5vh;
     margin: auto 0px;
   }
-}
-
-@media screen and (max-width: 1024px) {
   .geo-shape-1 img {
     display: none;
   }
@@ -602,7 +612,7 @@ html::-webkit-scrollbar-thumb {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
   body {
     overflow: hidden;
   }
@@ -617,7 +627,7 @@ html::-webkit-scrollbar-thumb {
   }
   .navbar {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -626,6 +636,7 @@ html::-webkit-scrollbar-thumb {
     z-index: 2;
     right: 0px;
     height: 120vw;
+    font-size: 10px;
     width: 100%;
     top: 30px;
   }
@@ -637,6 +648,7 @@ html::-webkit-scrollbar-thumb {
     display: block;
   }
   .nav-enabled {
+    display: flex;
     transform: translateX(0%);
     animation: fadeInAnimation ease-in-out 0.6s;
     animation-iteration-count: 1;
@@ -664,6 +676,52 @@ html::-webkit-scrollbar-thumb {
   }
 }
 
+@media (min-width: 850px) {
+  .background {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    width: 50%;
+  }
+
+  .background {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .geo-shape-3 p {
+    font-size: 14px;
+  }
+  .geo-shape-2 {
+    width: 100%;
+    margin: auto;
+  }
+  .geo-shape-2 img {
+    width: 80%;
+  }
+
+  .container-2 {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .background {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+
 @media screen and (max-width: 500px) {
   .header {
     padding-bottom: 10vw;
@@ -678,5 +736,18 @@ html::-webkit-scrollbar-thumb {
       );
     background-repeat: no-repeat;
     background-size: 160vw 220%;
+  }
+
+  .container-2 {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .background {
+    max-width: 100%;
+    max-height: 100%;
   }
 }
