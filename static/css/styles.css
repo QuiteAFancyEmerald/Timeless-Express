@@ -393,6 +393,11 @@ html::-webkit-scrollbar-thumb {
   text-transform: uppercase;
 }
 
+.head-index {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
 #showcase {
   list-style-type: none;
 }
