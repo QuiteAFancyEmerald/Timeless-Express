@@ -1,4 +1,4 @@
-# Timeless <img align="right" width="200px" src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Timeless/master/static/logo.png?raw"></img>
+# Timeless <img align="right" width="550px" src="https://github.com/QuiteAFancyEmerald/Timeless/blob/master/src/img/homepage.png?raw"></img>
 ### A clean, thoughtfully designed portfolio site made with Express and vanilla JS/CSS.
 
 
