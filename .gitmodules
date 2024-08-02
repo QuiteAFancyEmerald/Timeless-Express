@@ -1,0 +1,3 @@
+[submodule "src/webretro"]
+	path = src/webretro
+    url = https://github.com/BinBashBanana/webretro
