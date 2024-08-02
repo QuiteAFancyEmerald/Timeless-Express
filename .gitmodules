@@ -1,3 +1,7 @@
 [submodule "src/webretro"]
 	path = src/webretro
     url = https://github.com/BinBashBanana/webretro
+
+[submodule "src/webosu"]
+	path = src/webosu
+    url = https://github.com/BlaNKtext/webosu.git
