@@ -1,39 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hutao.dev/</loc>
-    <lastmod>2023-01-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://hutao.dev/projects</loc>
-    <lastmod>2023-01-18</lastmod>
+    <loc>https://quiteafancyemerald.com</loc>
+    <lastmod>2024-10-08T00:00:00+00:00</lastmod>
+    <priority>1.00</priority>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hutao.dev/waifus</loc>
-    <lastmod>2023-01-18</lastmod>
+    <loc>https://quiteafancyemerald.com/projects</loc>
+    <lastmod>2024-10-08T00:00:00+00:00</lastmod>
+    <priority>0.95</priority>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hutao.dev/socials</loc>
-    <lastmod>2023-01-18</lastmod>
+    <loc>https://quiteafancyemerald.com/socials</loc>
+    <lastmod>2024-10-08T00:00:00+00:00</lastmod>
+    <priority>0.95</priority>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hutao.dev/img</loc>
-    <lastmod>2023-01-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hutao.dev/svg</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://quiteafancyemerald.com/waifus</loc>
+    <lastmod>2024-10-08T00:00:00+00:00</lastmod>
+    <priority>0.60</priority>
+    <changefreq>weekly</changefreq>
   </url>
 </urlset>
