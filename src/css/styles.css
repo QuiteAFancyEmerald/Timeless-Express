@@ -136,13 +136,14 @@ h4 {
 }
 
 .header {
-  position:relative; 
+  position: relative; 
   z-index: 1;
   height: 200px;
   overflow: hidden;
   background: url("/svg/waves.svg");
   background-repeat: no-repeat;
-  background-size: 110vw 95%;
+  background-size: 110vw 300px; /* Adjust height to cover more */
+  background-position: center top; /* Align to the top */
   animation: fadeInAnimation ease-in-out 0.7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -214,10 +215,33 @@ h4 {
 .navbar {
   display: flex;
   justify-content: space-around;
-  margin: 20px 0px;
+  margin: 10px 0px;
   padding: 0px;
   width: 25%;
   overflow: hidden;
+}
+
+.navbar > li > .navbtn {
+  border: #d64642 1px solid;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative; 
+  overflow: hidden; 
+}
+
+.navbar > li > .navico {
+  border: #d64642 1px solid;
+  margin-left: 20px;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative; 
+  overflow: hidden; 
 }
 
 .footer {
@@ -306,16 +330,17 @@ h4 {
   animation: pulse 1s;
 }
 
+.navbar > li > a > i {
+  font-size: 20px;
+}
+
+
 .nav-mobile {
   display: none;
   cursor: pointer;
   margin: 20px 0px;
   padding: 0px;
   overflow: hidden;
-}
-
-.nav-mobile > i:hover {
-  animation: pulse 1s;
 }
 
 .content {
@@ -398,7 +423,8 @@ h4 {
   align-items: center;
   height: auto; 
   padding: 0 10%; 
-  gap: 100px; 
+  margin-top: 0;
+  gap: 200px; 
 }
 
 .container-2 {
@@ -514,8 +540,14 @@ h4 {
   width: 1px;
 }
 
-#showcase>ul>li {
+#showcase>li {
   will-change: transform;
+  background-color: rgba(147, 24, 58, 0.3);
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: #b71731 1px solid;
+  border-radius: 20px;
+  padding: 50px;
 }
 
 .geo-shape-1 {
@@ -592,13 +624,13 @@ h4 {
 
 @media screen and (max-width: 1800px) {
   .navbar {
-    width: 30%;
+    width: 20%;
   }
 }
 
 @media screen and (max-width: 1700px) {
   .navbar {
-    width: 30%;
+    width: 20%;
   }
   .footer {
     padding-top: 8vw;
@@ -618,7 +650,7 @@ h4 {
 
 @media screen and (max-width: 1024px) {
   .navbar {
-    width: 40%;
+    width: 20%;
     font-size: 12px;
   }
   .header {
@@ -703,7 +735,7 @@ h4 {
 
 @media (min-width: 768px) {
   .navbar {
-    width: 50%;
+    width: 30%;
   }
 
   .background {
@@ -725,28 +757,22 @@ h4 {
     width: 80%;
   }
 
-  .container-2 {
+  .button {
     display: none;
   }
 
   .footer {
-    display: none;
+    padding-top: 2vw;
+    background-size: 100vw auto;
   }
 
-  .background {
-    max-width: 100%;
-    max-height: 100%;
-  }
-}
-
-
-@media screen and (max-width: 500px) {
-  .container-2 {
-    display: none;
-  }
-
-  .footer {
-    display: none;
+  .footerbox {
+    display: flex;
+    list-style: square;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 2vh;
+    margin: auto 0px;
   }
 
   .background {
