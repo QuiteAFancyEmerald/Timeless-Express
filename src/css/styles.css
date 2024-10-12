@@ -142,8 +142,8 @@ h4 {
   overflow: hidden;
   background: url("/svg/waves.svg");
   background-repeat: no-repeat;
-  background-size: 110vw 300px; /* Adjust height to cover more */
-  background-position: center top; /* Align to the top */
+  background-size: 110vw 270px; 
+  background-position: center top; 
   animation: fadeInAnimation ease-in-out 0.7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -465,6 +465,7 @@ h4 {
 
 #showcase {
   list-style-type: none;
+  will-change: transform;
 }
 
 .head-w {
@@ -540,16 +541,6 @@ h4 {
   width: 1px;
 }
 
-#showcase>li {
-  will-change: transform;
-  background-color: rgba(147, 24, 58, 0.3);
-  backdrop-filter: blur(10px); /* Frosted glass effect */
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
-  border: #b71731 1px solid;
-  border-radius: 20px;
-  padding: 50px;
-}
-
 .geo-shape-1 {
   display: flex;
   justify-content: center;
@@ -562,34 +553,100 @@ h4 {
   object-fit: contain;
 }
 
-.geo-shape-2 {
-  position: relative;
-  width: 500px;
-  height: 600px;
-  bottom: 15vh;
-  left: 100px;
+/* Command Terminal Home Page */
+
+.showcase-item {
+  margin-bottom: 100px;
 }
 
-.geo-shape-2 img {
-  position: absolute;
+#showcase > li {
+  display: flex; 
+  justify-content: center; 
+  align-items: flex-start; 
+  will-change: transform;
+  background-color: rgba(147, 24, 58, 0.3);
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); /
+  border: #b71731 1px solid;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.mac-window {
+  flex: 1;
+  max-width: 800px; 
+  height: 440px;
+  border: 1px solid var(--nord0);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: rgba(179, 28, 53, 0.5);
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 20px; 
+}
+
+.mac-title-bar {
+  display: flex; 
+  justify-content: space-between; 
+  width: 100%; 
+  padding: 15px; 
+  background-color: rgba(179, 28, 53, 0.6);
+  border-bottom: 1px solid var(--nord0);
+}
+
+.mac-buttons {
+  display: flex;
+  gap: 8px;
+  margin-left: auto; 
+}
+
+.mac-buttons span {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.mac-close {
+  background-color: #d64642;
+}
+
+.mac-minimize {
+  background-color: #640e35;
+}
+
+.mac-maximize {
+  background-color: #260c3a;
+}
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
+}
+
+.mac-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.img-preview {
   width: 100%;
-  height: 500px;
+  max-height: 500px;
   overflow: hidden;
   object-fit: contain;
 }
 
-.hu-preview {
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
-  object-fit: contain;
-}
-
-.geo-shape-3 {
-  position: relative;
-  width: 680px;
-  height: 600px;
-  right: 20px;
+.showcase-information {
+  max-width: 800px;
+  padding: 0 20px;
 }
 
 .desc {
@@ -599,12 +656,8 @@ h4 {
   letter-spacing: 2px;
   margin-bottom: 1em;
   font-family: 'Montserrat', sans-serif;
+  word-wrap: break-word; 
   width: 100%;
-}
-
-.showcase-item > p {
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 2px;
 }
 
 .showcase-link {
@@ -614,12 +667,8 @@ h4 {
 
 .link {
   cursor: pointer;
-  color: #b41c35;
+  color: #d64642;
   text-decoration: none;
-}
-
-.showcase-item {
-  margin: 150px;
 }
 
 @media screen and (max-width: 1800px) {
