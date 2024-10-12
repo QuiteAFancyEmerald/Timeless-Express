@@ -22,11 +22,6 @@
   }
 }
 
-html,
-body {
-  min-height: 100%;
-}
-
 html {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -396,15 +391,14 @@ h4 {
   margin-left: 50px;
 }
 
-
 .container-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center; 
   align-items: center;
-  height: 50vh; 
-  padding: 0 200px; 
-  gap: 450px; 
+  height: auto; 
+  padding: 0 10%; 
+  gap: 100px; 
 }
 
 .container-2 {
