@@ -138,11 +138,11 @@ h4 {
 .header {
   position: relative; 
   z-index: 1;
-  height: 200px;
+  height: 150px;
   overflow: hidden;
   background: url("/svg/waves.svg");
   background-repeat: no-repeat;
-  background-size: 110vw 270px; 
+  background-size: 150vw 200px; 
   background-position: center top; 
   animation: fadeInAnimation ease-in-out 0.7s;
   animation-iteration-count: 1;
@@ -357,6 +357,7 @@ h4 {
   margin-top: 20px;
   border-collapse: collapse;
   width: 100%; /* Adjust width as necessary */
+  text-decoration: none;
 }
 
 .table-of-contents th,
@@ -364,6 +365,7 @@ h4 {
   border: 1px solid #b71731; /* Use the same color as your button border */
   padding: 15px;
   text-align: left; /* Align text to the left */
+  border-radius: 15px;
 }
 
 .table-of-contents th {
@@ -372,8 +374,24 @@ h4 {
   text-transform: uppercase;
 }
 
+.table-of-contents i {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
 .table-of-contents td {
   background-color: #b51d35; /* Light background for table cells */
+}
+
+.scroll i {
+  padding: 15px;
+}
+
+.scroll a {
+  text-decoration: none;
+  color: white;
 }
 
 .button {
@@ -443,7 +461,6 @@ h4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center; 
-  align-items: center;
   height: auto; 
   padding: 0 10%; 
   margin-top: 0;
@@ -505,6 +522,7 @@ h4 {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 3px;
   max-width: 600px;
+  margin-top: 100px;
 }
 
 .main-body>h3 {
