@@ -12,7 +12,7 @@ My portfolio site made from scratch! Built with vanilla JS/CSS and Express.
 - Clean carousel for project showcasing
 
 
-#### Setup
+### Setup
 Why would you want to do this? shrug~
 
 Well it works fully as a static site but you may do the below if you want to use a very basic environment.
@@ -24,7 +24,7 @@ npm install
 npm start
 ```
 
-#### NGINX Configuration
+### NGINX Configuration
 ```nginx 
     server {
         listen 80;
