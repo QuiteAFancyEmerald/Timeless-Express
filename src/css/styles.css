@@ -838,7 +838,7 @@ h4 {
     overflow: hidden;
   }
   .header {
-    background-size: 160vw 135%;
+    background-size: 160vw 138%;
   }
   .brand {
     display: none;
@@ -856,8 +856,8 @@ h4 {
     height: auto; /* Use auto height to fit content */
     font-size: 10px; /* Base font size */
     width: 100%; /* Full width for navbar */
-    top: 55px; /* Distance from the top */
-    padding: 30px 0; /* Padding for spacing */
+    top: 48px; /* Distance from the top */
+    padding: 20px 0; /* Padding for spacing */
     overflow: auto; /* Allow scrolling if content overflows */
   }
   .navbar > li {
@@ -902,7 +902,7 @@ h4 {
     list-style: square;
     justify-content: space-around;
     align-items: center;
-    min-height: 2vh;
+    height: 550px;
     margin: auto 0px;
   }
 }
@@ -968,6 +968,40 @@ h4 {
 
   .button {
     display: none;
+  }
+
+  .geo-shape-1 {
+    display: none;
+  }
+
+  .container-1 {
+    padding: 0 5%;
+  }
+  
+  .head-w {
+    font-size: 15px;
+  }
+
+  .splash {
+    font-size: 10px;
+  }
+
+  .desc {
+    padding: 25%;
+    font-size: 15px;
+  }
+
+  .showcase-link {
+    display: none;
+  }
+
+  .container-2 {
+    justify-content: left;
+    margin-left: 5px;
+  }
+
+  .container-2 p {
+    width: 280px;
   }
 
   .footer {
