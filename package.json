@@ -8,8 +8,9 @@
     },
     "author": "Quite A Fancy Emerald",
     "dependencies": {
-        "express": "^4.17.1",
+        "express": "^4.21.1",
         "helmet": "^8.0.0",
+        "marked": "^14.1.2",
         "mime-types": "^2.1.27"
     }
 }

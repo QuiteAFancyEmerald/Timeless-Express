@@ -353,6 +353,29 @@ h4 {
   animation-fill-mode: forwards;
 }
 
+.table-of-contents {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%; /* Adjust width as necessary */
+}
+
+.table-of-contents th,
+.table-of-contents td {
+  border: 1px solid #b71731; /* Use the same color as your button border */
+  padding: 15px;
+  text-align: left; /* Align text to the left */
+}
+
+.table-of-contents th {
+  background-color: #d64642; /* Header background color */
+  color: white; /* Header text color */
+  text-transform: uppercase;
+}
+
+.table-of-contents td {
+  background-color: #b51d35; /* Light background for table cells */
+}
+
 .button {
   display: inline-block;
   vertical-align: middle;
@@ -566,7 +589,7 @@ h4 {
   will-change: transform;
   background-color: rgba(147, 24, 58, 0.3);
   backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px); /
+  -webkit-backdrop-filter: blur(10px); 
   border: #b71731 1px solid;
   border-radius: 20px;
   padding: 50px;
@@ -585,6 +608,18 @@ h4 {
   justify-content: center; 
   align-items: center; 
   margin-bottom: 20px; 
+}
+
+.showcase-information-blog {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+}
+
+.showcase-information-blog >.mac-window {
+  margin-top: 40px;
+  width: 450px;
 }
 
 .mac-title-bar {
@@ -660,6 +695,61 @@ h4 {
   width: 100%;
 }
 
+.blog {
+  letter-spacing: 2px;
+  margin-bottom: 1em;
+  font-family: 'Montserrat', sans-serif;
+  word-wrap: break-word;
+  width: 100%;
+  text-align: left;
+}
+
+/* General paragraph and heading spacing */
+.blog p {
+  margin-bottom: 1.5em;
+}
+
+.blog h1, .blog h2, .blog h3, .blog h4, .blog h5, .blog h6 {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  line-height: 1.3;
+}
+
+.blog ul, .blog ol {
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.blog li {
+  margin-bottom: 0.5em;
+}
+
+/* Blockquote style */
+.blog blockquote {
+  margin: 1.5em 0;
+  padding-left: 1.5em;
+  border-left: 3px solid #ccc;
+  color: #666;
+  font-style: italic;
+}
+
+/* Code block style */
+.blog pre, .blog code {
+  background-color: #f5f5f5;
+  padding: 0.5em;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Horizontal rule */
+.blog hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2em 0;
+}
+
+
+
 .showcase-link {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
@@ -734,18 +824,36 @@ h4 {
   }
   .navbar {
     position: absolute;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(100%);
-    background-color: #e74d45;
+    display: none; /* Initially hidden, show with JavaScript */
+    align-items: center; /* Center items horizontally */
+    background-color: #e74d45; /* Navbar background color */
     z-index: 2;
-    right: 0px;
-    height: 120vw;
-    font-size: 10px;
-    width: 100%;
-    top: 30px;
+    right: 0; /* Positioning */
+    height: auto; /* Use auto height to fit content */
+    font-size: 10px; /* Base font size */
+    width: 100%; /* Full width for navbar */
+    top: 55px; /* Distance from the top */
+    padding: 30px 0; /* Padding for spacing */
+    overflow: auto; /* Allow scrolling if content overflows */
+  }
+  .navbar > li {
+    margin: 5px 0; /* Vertical spacing between items */
+    width: 100%; /* Make list items full-width, with some padding */
+  }
+
+  .navbar > li > a {
+      display: block; /* Make anchor tags fill their parent li */
+      padding: 12px; /* Adjust padding for better click area */
+      text-align: center; /* Center the text */
+      text-decoration: none; /* No underline */
+      background-color: #d64642; /* Background color */
+      color: white; /* Text color */
+      border-radius: 5px; /* Rounded corners */
+      transition: background-color 0.3s; /* Smooth hover transition */
+  }
+
+  .navbar > li > a:hover {
+      background-color: #b51d35; /* Change background color on hover */
   }
   .content {
     z-index: -1;
@@ -784,7 +892,35 @@ h4 {
 
 @media (min-width: 768px) {
   .navbar {
-    width: 30%;
+    width: 45%;
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+  }
+
+  .navbar > li {
+      margin: 0; 
+  }
+
+  .navbar > li > a {
+      display: block; 
+      padding: 10px 5px; 
+      text-align: center; 
+      text-decoration: none; 
+      background-color: #d64642;
+      color: white; 
+      border-radius: 5px; 
+      transition: background-color 0.3s;
+  }
+
+  .navbar > li + li > a {
+      margin-left: 15px; 
+  }
+
+  .navbar > li > a:hover {
+      background-color: #b51d35; 
   }
 
   .background {
