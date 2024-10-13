@@ -50,15 +50,12 @@ npm start
         error_log off;
 
         location / {
-            # Holy Unblocker
             proxy_pass http://localhost:8080;
             proxy_http_version 1.1;
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header x-frame-options "SAMEORIGIN";
             proxy_set_header Connection 'upgrade';
             proxy_set_header Host $host;
-            # enable this if you forward HTTPS traffic to unicorn,
-            # this helps Rack set the proper URL scheme for doing redirects:
             proxy_set_header X-Forwarded-For-Forwarded-Proto $https;
             proxy_set_header X-Url-Scheme $scheme;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
