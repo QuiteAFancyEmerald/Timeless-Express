@@ -29,6 +29,12 @@ html {
   overflow-x: hidden;
 }
 
+a {
+  cursor: pointer;
+  color: #d64642;
+  text-decoration: none;
+}
+
 ::selection {
   background: #ac19349c;
   opacity: 80%; /* WebKit/Blink Browsers */
@@ -386,7 +392,7 @@ h4 {
 }
 
 .scroll i {
-  padding: 15px;
+  padding: 5px;
 }
 
 .scroll a {

@@ -9,21 +9,21 @@
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#b4213b">
     <meta name="googlebot" content="index, follow, snippet" />
     <title>Quite A Fancy Emerald | Socials</title>
-    <meta name="description" content="Emerald can be found on various social media platforms, where you can view their videos, websites, and other work. You can also connect with them and join the communities they are a part of their own." />
-    <meta name="keywords" content="freelancer, web development, react, express, user experience, UX, visual design, video editing, coding, coffee, anime, portfolio, official website">
+    <meta name="description" content="Connect with Quite A Fancy Emerald across various social media platforms. Discover videos, web projects, and engage with the creative community. Join us on Twitter, Instagram, TikTok, and YouTube for the latest updates, insights, and interactions." />
+    <meta name="keywords" content="social media, Twitter, Instagram, TikTok, YouTube, freelancer, web development, user experience, UX design, video editing, visual storytelling, creative community, portfolio, content creator, connect, engagement">
     <meta property="og:site_name" content="QuiteAFancyEm">
-    <meta property="og:url" content="https://quiteafancyemerald.com/">
-    <meta property="og:title" content="QuiteAFancyEmerald">
+    <meta property="og:url" content="https://quiteafancyemerald.com/socials">
+    <meta property="og:title" content="Connect with Quite A Fancy Emerald">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Emerald can be found on various social media platforms, where you can view their videos, websites, and other work. You can also connect with them and join the communities they are a part of their own. These platforms include Twitter, Instagram, TikTok, or YouTube, where you can see the latest updates and works that Emerald is working on, as well as engage with their audience. This is an effective way to stay updated on the content that Emerald creates and to discover new projects that may be of interest to you.">
+    <meta property="og:description" content="Follow Quite A Fancy Emerald on social media to view their latest videos and web projects. Engage with the communities on Twitter, Instagram, TikTok, and YouTube. Stay updated on creative endeavors and interact with the content creator." />
     <meta property="og:image" content="/img/emeraldprofilepicture.png">
     <meta property="og:image:secure_url" content="/img/emeraldprofilepicture.png">
     <meta property="twitter:image" content="/img/emeraldprofilepicture_alt.jpg">
     <meta name="twitter:site" content="@QuiteAFancyEm">
     <meta name="twitter:creator" content="@QuiteAFancyEm">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="QuiteAFancyEm">
-    <meta name="twitter:description" content="Emerald can be found on various social media platforms, where you can view their videos, websites, and other work. You can also connect with them and join the communities they are a part of their own. These platforms include Twitter, Instagram, TikTok, or YouTube, where you can see the latest updates and works that Emerald is working on, as well as engage with their audience. This is an effective way to stay updated on the content that Emerald creates and to discover new projects that may be of interest to you.">
+    <meta name="twitter:title" content="Connect with Quite A Fancy Emerald">
+    <meta name="twitter:description" content="Join Quite A Fancy Emerald on social media platforms like Twitter, Instagram, TikTok, and YouTube. Explore videos, web projects, and engage with the creative community for updates and interactions." />
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -114,81 +114,103 @@
 
 <body>
     <div class="header">
-        <nav>
+        <nav aria-label="Social Media Navigation">
             <div class="brand">
-                <img id="logo" width="20px;" height="20px;" src="favicon.png" alt="The official logo of Quite A Fancy Emerald, a content creator aspiring to create dynamic user experiences and visually appealing designs through the use of video production and web development."></img>
-                <a href="/">QuiteAFancyEm | Timeless</a>
+                <img id="logo" width="20" height="20" src="favicon.png" alt="Quite A Fancy Emerald logo - A content creator dedicated to dynamic user experiences, visually appealing designs, video production, and web development." loading="lazy">
+                <a href="/" title="Home | Quite A Fancy Emerald">QuiteAFancyEm | Timeless</a>
             </div>
-            <div class="brand-res">
+            <div class="brand-res" aria-hidden="true">
                 <p>QuiteAFancyEm</p>
             </div>
-            <ul id="navbar-sel" class="navbar">
-                <li><a class="navbtn button button-left" href="/">Home</a></li>
-                <li><a class="navbtn button button-right" href="/projects">Projects</a></li>
-                <li><a class="navbtn button button-right" href="/blog">Blog</a></li>
-                <li><a class="navbtn button button-right" href="/socials">Socials</a></li>
-                <li><a class="navico button button-right" href="https://github.com/QuiteAFancyEmerald/"><i class="fa-brands fa-github"></i></a></li>
+            <ul id="navbar-sel" class="navbar" role="menubar">
+                <li role="none"><a class="navbtn button button-left" href="/" title="Go to homepage" role="menuitem">Home</a></li>
+                <li role="none"><a class="navbtn button button-right" href="/projects" title="View all projects by Quite A Fancy Emerald" role="menuitem">Projects</a></li>
+                <li role="none"><a class="navbtn button button-right" href="/blog" title="Read the blog of Quite A Fancy Emerald" role="menuitem">Blog</a></li>
+                <li role="none"><a class="navbtn button button-right" href="/socials" title="Connect with Quite A Fancy Emerald on social media" role="menuitem" aria-current="page">Socials</a></li>
+                <li role="none"><a class="navico button button-right" href="https://github.com/QuiteAFancyEmerald/" title="Visit Quite A Fancy Emerald's GitHub profile" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span class="sr-only">GitHub Profile</span>
+                </a></li>
             </ul>
-            <div class="nav-mobile">
-                <i class="fa-solid fa-bars"></i>
+            <div class="nav-mobile" aria-label="Mobile Navigation Menu">
+                <button aria-expanded="false" aria-controls="navbar-sel" class="mobile-menu-toggle">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    <span class="sr-only">Toggle Navigation</span>
+                </button>
             </div>
         </nav>
-    </div>
+    </div>    
     <div id="background" class="background background-grain" title="background"></div>
     <iframe id="background" class="background" title="background" src="/svg/background.svg"></iframe>
     <div class="content">
         <div class="container-1">
             <div class="main-body">
                 <h1 class="head-index">/ Socials /</h1>
-                <h3>- Feel free to message or contact me! -</h3>
+                <h2>- Check out my socials or projects. -</h2>
+                <p>Feel free to message or contact me through any of the platforms listed below:</p>
+                <br><br>
                 <div class="spacing">
-                    <div class="spacing">
-                        <p>Discord: QuiteAFancyEmerald#0001</p><br>
-                        <p>Patreon: TBA</p><br>
+                    <div class="contact-info">
+                        <p><strong>Discord:</strong> QuiteAFancyEmerald#0001</p>
+                        <p><strong>Patreon:</strong> TBA</p>
                     </div>
                     <code id="code"></code>
                 </div>
+                <br><br>
+                <h3>Follow me on social media:</h3>
                 <div class="button-group">
-                    <a class="button button-left" href="https://www.youtube.com/@quiteafancyemerald"><i class="fa-brands fa-youtube"></i> YouTube</a>
-                    <a class="button button-right" href="https://github.com/QuiteAFancyEmerald/"><i class="fa-brands fa-github"></i> GitHub</a>
-                    <a class="button button-right" href="https://twitter.com/quiteafancyem"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                    <a class="button button-left" href="https://www.youtube.com/@quiteafancyemerald" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-youtube"></i> YouTube
+                    </a>
+                    <a class="button button-right" href="https://github.com/QuiteAFancyEmerald/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a class="button button-right" href="https://twitter.com/quiteafancyem" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-twitter"></i> Twitter
+                    </a>
                 </div>
                 <div class="button-group">
-                    <a class="button button-left" href="https://discord.gg/quite"><i class="fa-brands fa-discord"></i> Discord</a>
+                    <a class="button button-left" href="https://discord.gg/quite" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-discord"></i> Discord
+                    </a>
                 </div>
             </div>
             <div class="geo-shape-1">
-                <img data-aos="fade-left" src="img/info4.png" alt="Meet QuiteAFancyEmerald - an amateur nerd, aspiring creator, and full-stack developer based in the USA. At age 18, QuiteAFancyEmerald is skilled in FX art, UX design, and content creation. Whether it's web development or video editing, QuiteAFancyEmerald brings a unique perspective and passion to every project. Follow along on their journey as they continue to grow and learn as a creator."></img>
+                <img 
+                    data-aos="fade-left" 
+                    src="img/info4.png" 
+                    alt="Meet QuiteAFancyEmerald - an amateur nerd, aspiring creator, and full-stack developer based in the USA. At age 18, QuiteAFancyEmerald is skilled in FX art, UX design, and content creation. Follow along on their journey as they continue to grow and learn as a creator." 
+                    loading="lazy">
             </div>
         </div>
-    </div>
+    </div>    
     <div class="footer">
         <div class="footerbox">
             <div class="brand">
-                <img id="logo" height="40px;" src="favicon.png" alt="The official logo of Quite A Fancy Emerald, a content creator aspiring to create dynamic user experiences and visually appealing designs through the use of video production and web development."></img>
-                <p>QuiteAFancyEm | Timeless</p>
+                <img id="logo" width="40" height="40" src="favicon.png" alt="Quite A Fancy Emerald logo, representing a content creator dedicated to dynamic user experiences and stunning designs in video production and web development.">
+                <p title="QuiteAFancyEm | Timeless">QuiteAFancyEm | Timeless</p>
             </div>
             <ul>
                 <div class="socials">
-                    <p>Socials</p>
+                    <p title="Follow on Social Media">Socials</p>
                 </div>
-                <li><a href="https://www.youtube.com/channel/UC9OUOGSUWD5I7tnLiUkgOMg">YouTube</i></a></li>
-                <li><a href="https://github.com/QuiteAFancyEmerald/">GitHub</a></li>
-                <li><a href="https://twitter.com/quiteafancyem">Twitter</a></li>
+                <li><a href="https://www.youtube.com/channel/UC9OUOGSUWD5I7tnLiUkgOMg" title="Subscribe to QuiteAFancyEm on YouTube" target="_blank">YouTube</a></li>
+                <li><a href="https://github.com/QuiteAFancyEmerald/" title="Explore QuiteAFancyEmerald's GitHub Projects" target="_blank">GitHub</a></li>
+                <li><a href="https://twitter.com/quiteafancyem" title="Follow QuiteAFancyEm on Twitter" target="_blank">Twitter</a></li>
             </ul>
             <ul>
                 <div class="socials">
                     <div class="top">
-                        <p>Other</p>
-                        <a href="#navbar-sel"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
+                        <p title="Additional Links and Resources">Other</p>
+                        <a href="#navbar-sel" title="Back to Top"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
                     </div>
                 </div>
-                <li><a href="https://myanimelist.net/profile/QuiteAFancyEm">MAL</a></li>
-                <li><a href="https://www.deviantart.com/quiteafancyemerald">DeviantArt</a></li>
-                <li><a href="/socials">Contact</a></li>
+                <li><a href="https://myanimelist.net/profile/QuiteAFancyEm" title="Visit QuiteAFancyEm's MyAnimeList Profile" target="_blank">MAL</a></li>
+                <li><a href="https://www.deviantart.com/quiteafancyemerald" title="Explore QuiteAFancyEmerald's DeviantArt Gallery" target="_blank">DeviantArt</a></li>
+                <li><a href="/socials" title="Contact QuiteAFancyEm for inquiries or collaborations">Contact</a></li>
             </ul>
         </div>
-    </div>
+    </div>    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYCEL533KQ"></script>
     <script>
