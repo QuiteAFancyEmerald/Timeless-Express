@@ -20,8 +20,8 @@ Well it works fully as a static site but you may do the below if you want to use
 ```
 git clone https://github.com/QuiteAFancyEmerald/Timeless.git
 cd Timeless
-npm install
-npm start
+pnpm install
+pnpm start
 ```
 
 ### NGINX Configuration
